@@ -1,6 +1,7 @@
 # cmod_a7_pattern_generator_v1
 
 This Systemverilog design is intended for a Digilent Cmod A7 FPGA board.
+spi_regmap_top.sv is the top-level file with all the instances.
 
 This design builds upon my "cmod_a7_spi_sram" repository. New features include:
 (1) Pattern Generator       - allows 1, 2, 4 or 8 GPIO pins to drive levels from stored binary data in SRAM
