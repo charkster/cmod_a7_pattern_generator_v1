@@ -37,7 +37,8 @@ module version_flash(
     logic        version_busy;
     logic        led_on;
     
-    always_ff @(posedge clk, negedge rst_n)       if (~rst_n) button_q <= 1'b0;
+    always_ff @(posedge clk, negedge rst_n)       
+       if (~rst_n) button_q <= 1'b0;
        else        button_q <= button;
     
     assign button_fall_det = !button && button_q;
